@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Poppins:wght@600&display=swap');
+
+$primary-pink: hsl(322, 100%, 66%);
+$pale-cyan: hsl(193, 100%, 96%);
+$dark-cyan: hsl(192, 100%, 9%);
+$gray-blue: hsl(208, 11%, 55%);
+$white: hsl(0, 0, 100%);
+
+$font-size: 18px;
+
+$heading: 'Poppins', sans-serif;
+$heading-normal: 600;
+$body: 'Open Sans', sans-serif;
+$body-normal: 400;
+$body-bold: 700;
+
+html,
+body {
+    font-family: $body;
+    font-weight: $body-normal;
+    font-size: $font-size;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading;
+    font-weight: $heading-normal;
+}
+.side-padding {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+p {
+    line-height: 1.5em;
+}
+
+.button {
+    font-size: 0.8rem;
+    display: inline-block;
+    background: $primary-pink;
+    width: 250px;
+    padding: 1em 0;
+    border-radius: 40px;
+    color: $white;
+    text-decoration: none;
+}
+// Header component
+header {
+    padding: 2rem 0;
+    background: url('./images/bg-hero-mobile.svg') no-repeat, $pale-cyan;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            height: 1.25rem;
+        }
+        a {
+            text-align: center;
+            font-size: 0.7rem;
+            display: inline-block;
+            background: $white;
+            width: 100px;
+            padding: 0.75em 0;
+            border-radius: 40px;
+            color: $dark-cyan;
+            text-decoration: none;
+        }
+    }
+    section {
+        padding: 5rem 0 2em;
+        text-align: center;
+        h1 {
+            line-height: 1.5em;
+        }
+        p {
+            padding: 2em 0;
+        }
+        img {
+            padding: 5em 0 0;
+        }
+    }
+}
